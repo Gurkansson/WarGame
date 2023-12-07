@@ -14,9 +14,11 @@ class MainActivity : AppCompatActivity() {
 
         val button = findViewById<Button>(R.id.startButton)
 
+
         button.setOnClickListener {
             start()
         }
+
 
     }
 
@@ -24,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, RulesActivity::class.java)
         startActivity(intent)
     }
+
 
 
 }
