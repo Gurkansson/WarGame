@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pokemon"
+    tools:context=".Game">
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar"
+        android:layout_width="419dp"
+        android:layout_height="43dp"
+        android:background="@android:color/holo_green_dark"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar2"
+        android:layout_width="419dp"
+        android:layout_height="43dp"
+        android:background="@android:color/holo_green_dark"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/shown_card2"
+        android:layout_width="101dp"
+        android:layout_height="140dp"
+        android:layout_marginBottom="224dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/red_cardimage" />
+
+    <ImageView
+        android:id="@+id/shown_card1"
+        android:layout_width="101dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/red_cardimage" />
+
+    <TextView
+        android:id="@+id/points_player1"
+        android:layout_width="122dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:text="Points: 0"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/points_player2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="8dp"
+        android:text="Points: 0"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_war"
+        android:layout_width="429dp"
+        android:layout_height="95dp"
+        android:gravity="center"
+        android:text=" WAR              WAR"
+        android:textAlignment="textStart"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/b_deal"
+        android:layout_width="101dp"
+        android:layout_height="140dp"
+        android:layout_marginBottom="30dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/red_cardimage" />
+
+    <ImageView
+        android:id="@+id/cardSoldier1"
+        android:layout_width="86dp"
+        android:layout_height="123dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="152dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/cardredmini" />
+
+    <ImageView
+        android:id="@+id/cardSoldier2"
+        android:layout_width="86dp"
+        android:layout_height="123dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="132dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/cardredmini" />
+
+    <ImageView
+        android:id="@+id/cardSoldier3"
+        android:layout_width="86dp"
+        android:layout_height="123dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="112dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/cardredmini" />
+
+    <ImageView
+        android:id="@+id/cardSoldier4"
+        android:layout_width="86dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="152dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cardredmini" />
+
+    <ImageView
+        android:id="@+id/cardSoldier5"
+        android:layout_width="86dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="132dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cardredmini" />
+
+    <ImageView
+        android:id="@+id/cardSoldier6"
+        android:layout_width="86dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="112dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cardredmini" />
+
+    <ImageView
+        android:id="@+id/blixt_uppe"
+        android:layout_width="94dp"
+        android:layout_height="102dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.363"
+        app:srcCompat="@drawable/blixt_uppe" />
+
+    <ImageView
+        android:id="@+id/blixt_nere"
+        android:layout_width="47dp"
+        android:layout_height="142dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.647"
+        app:srcCompat="@drawable/blixt_nedre" />
+
+    <ImageButton
+        android:id="@+id/VS_button"
+        android:layout_width="124dp"
+        android:layout_height="123dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vs_button" />
+
+    <ImageView
+        android:id="@+id/warCardp2"
+        android:layout_width="101dp"
+        android:layout_height="140dp"
+        android:layout_marginBottom="204dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/red_cardimage" />
+
+    <ImageView
+        android:id="@+id/P1_hand"
+        android:layout_width="101dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbar"
+        app:srcCompat="@drawable/red_cardimage" />
+
+    <ImageView
+        android:id="@+id/warCardp1"
+        android:layout_width="101dp"
+        android:layout_height="140dp"
+        android:layout_marginBottom="476dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.902"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/red_cardimage" />
+
+    <TextView
+        android:id="@+id/cardsLeftP1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="Cards left: 0"
+        android:textColor="@color/design_default_color_on_primary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/cardsLeftP2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.005" />
+
+    <TextView
+        android:id="@+id/cardsLeftP2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Cards left: 0"
+        android:textColor="@color/design_default_color_on_primary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbar2"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbar2"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/againButton"
+        android:layout_width="90dp"
+        android:layout_height="86dp"
+        android:layout_marginBottom="64dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/projekt" />
+
+    <ImageView
+        android:id="@+id/loser_view"
+        android:layout_width="291dp"
+        android:layout_height="564dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.497"
+        app:srcCompat="@drawable/smile" />
+
+    <ImageView
+        android:id="@+id/winner"
+        android:layout_width="334dp"
+        android:layout_height="472dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.212"
+        app:srcCompat="@drawable/winner" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,12 +6,55 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginBottom="280dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bombdel" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="185dp"
+        android:layout_height="187dp"
+        android:layout_marginBottom="120dp"
+        android:backgroundTint="#020202"
+        android:fontFamily="casual"
+        android:text="Play"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        app:iconTint="#393636"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="227dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="208dp"
+        android:fontFamily="casual"
+        android:text="Game"
+        android:textSize="80sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.809"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="213dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="124dp"
+        android:fontFamily="casual"
+        android:text=" War"
+        android:textSize="80sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.196"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
