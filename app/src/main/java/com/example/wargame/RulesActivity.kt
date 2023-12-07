@@ -14,12 +14,23 @@ class RulesActivity : AppCompatActivity() {
 
         val button = findViewById<Button>(R.id.playButton)
 
+        val test = findViewById<Button>(R.id.button)
+
+        test.setOnClickListener{
+            goToTest ()
+        }
+
         button.setOnClickListener {
             Log.d("play", "again")
             Game()
         }
 
 
+    }
+
+    fun goToTest() {
+        val intent = Intent(this, TestActivity::class.java)
+        startActivity(intent)
     }
 
     fun Game() {
