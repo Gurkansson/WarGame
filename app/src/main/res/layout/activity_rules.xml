@@ -10,7 +10,7 @@
         android:id="@+id/playButton"
         android:layout_width="210dp"
         android:layout_height="67dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="104dp"
         android:backgroundTint="#009688"
         android:fontFamily="casual"
         android:text="Lets Play"
@@ -124,13 +124,13 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="72dp"
-        android:layout_height="61dp"
+        android:layout_width="175dp"
+        android:layout_height="57dp"
         android:layout_marginBottom="16dp"
-        android:text="Button"
+        android:text="Till Test sida för utvecklande"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintHorizontal_bias="0.936"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
